@@ -14,8 +14,8 @@ As in previous assignments, we use `uv` to manage dependencies.
 
 1. Install all packages except `flash-attn`, then all packages (`flash-attn` is weird)
 ```
-uv sync --no-install-package flash-attn
-uv sync
+uv sync --no-install-package flash-attn --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+uv pip install flash_attn=2.7.4-post1
 ```
 
 2. Run unit tests:
